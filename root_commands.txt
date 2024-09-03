@@ -1,0 +1,5 @@
+# how to add user as root (need SSH key uploaded to Digital Ocean first)
+adduser awilliamso6
+usermod -aG sudo awilliamso6
+rsync --archive --chown=awilliamso6:awilliamso6 ~/.ssh /home/awilliamso6
+
